@@ -1,0 +1,424 @@
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-MediumItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Italic.woff2') format('woff2'),
+        url('fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  
+  
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+ 
+
+
+body{
+  background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Open Sans", verdana, Helvetica, sans-serif;
+}
+.nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-bottom: 5px; */
+   
+/* background-image: linear-gradient( rgba(66, 64, 64, 0.628), rgba(66, 64, 64, 0.527), rgba(147, 138, 138, 0.146)); */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+position: sticky;
+z-index: 100;
+top: 0;
+/* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;; */
+box-sizing: border-box;
+background-color: #ffffff;
+
+
+}
+
+
+/* .nav{
+    
+  
+    background-color: whitesmoke;
+    a{ color: #000;}
+    .login-button{
+      color: #000;
+      border: 1px solid #0000FF;
+    }
+    .nav-logo img{
+      background-color: transparent;
+      display: block;
+    }
+    .nav-whitelogo img{
+      display: none;
+    }
+    #hidden-menubar{
+      color: #000;
+    }
+    
+  } */
+
+
+  
+.nav-logo img{
+    width: 15rem;
+    
+    padding: 0px 15px ;
+      border-radius: 2px;
+      
+       
+  }
+
+  .nav-logo{
+    width: auto;
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-top: 0.4%;
+    
+    
+}
+
+.nav-menubar ul{
+    display: flex;
+    
+}
+.nav-menubar ul li{
+    list-style: none;
+   
+    margin-top: 0.5%;
+}
+
+.nav-menubar ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", verdana, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    
+    font-weight: 500;
+    
+    padding: 5px 10px;
+    
+    color: #000;
+    position: relative;
+    margin-top: 0.5%;
+}
+
+.submenu{
+    display: none;
+}
+
+.login-button {
+   
+    margin-top: 0.9%;
+      
+          border: 1px solid #000;
+          background: none;
+          padding: 5px 10px;
+          font-family: "Open Sans", verdana, Helvetica, sans-serif;
+          font-size: 1.2rem;
+          
+          cursor: pointer;
+          
+          
+          
+  color: #000;
+  
+  
+  }
+  .login-button option{
+    background-color: #ffffff;
+    font-weight: 500;
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Open Sans", verdana, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 5px 10px;
+  }
+  
+
+  
+  .login-button:hover{
+      background-color: rgb(23, 40, 82);
+      color: #ffffff;
+       option a{
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Open Sans", verdana, Helvetica, sans-serif ;
+      }
+    #login-button:hover{
+      color: #ffffff;
+      font-family: "Open Sans", verdana, Helvetica, sans-serif;
+      font-weight: 500;
+    }
+     
+  }
+
+  #hidden-menubar{
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+    
+}
+
+.nav-menubar ul li a:hover{
+  padding: 5px 10px;
+  border: 1px solid rgb(23, 40, 82);
+  color: #ffffff;
+  background: rgb(23, 40, 82);
+  transition: 0.5s all;
+  border-radius: 2px;
+}
+  
+@media screen and (max-width:1100px) {
+
+  body{
+    box-sizing: border-box;
+  }
+
+    #hidden-menubar{
+        font-size: 2rem;
+        color: #000;
+        display:block;
+        line-height: 1px;
+        position: absolute;
+        top: 1.5rem;
+        left: 95%;
+        
+    }
+   .nav-logo{
+    align-items: center;
+   }
+   .nav-logo img{
+    padding: 0px 5px 0px 5px;
+    background-color: transparent;
+}
+.nav{
+  height: fit-content;
+  width: 100%;
+  
+  display: block;
+  text-align: center;
+}
+
+.nav .nav-menubar ul{
+  display: none;
+
+}
+
+
+.nav .submenu{
+  display: none;
+}
+
+/* button-section */
+.nav-button{
+  
+  display: none;
+}
+
+.navx .nav{
+  height: fit-content;
+  width: 100%;
+  
+  display: block;
+  text-align: center;
+  
+  background-color: #ffffff;
+}
+.navx .nav-menubar ul{
+  display: block;
+  
+}
+.navx .nav-menubar ul li{
+  list-style: none;
+  /* padding: 10px 30px; */
+}
+
+.navx .nav-menubar ul li a{
+  text-decoration: none;
+  font-family: "Open Sans", verdana, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  
+  padding: 5px;
+}
+.navx .login-button{
+font-family: "Open Sans", verdana, Helvetica, sans-serif;
+font-size: 1.5rem;
+color: #000;
+font-weight: 600;
+text-align: center;
+
+}
+
+.navx .nav-button{
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+}
+.navx .login-button{
+  padding: 8px 20px;
+
+}
+
+.navx .login-button:hover{
+  background-color: rgb(23, 40, 82);
+  color: #ffffff;
+   option a{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Open Sans", verdana, Helvetica, sans-serif ;
+  }
+.navx #login-button:hover{
+  color: #ffffff;
+  font-family: "Open Sans", verdana, Helvetica, sans-serif;
+  font-weight: 500;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/* .navx .nav-button button:hover{
+  
+  background-color:rgb(23,40,82); 
+  color: #ffffff;
+  .menutab{
+    color: #ffffff;
+  }
+} */
+
+.nav-menubar ul li a:hover{
+  border: none;
+}
+
+  
+}
+
+
+@media screen and (max-width:768px) {
+
+  #hidden-menubar{
+    font-size: 2rem;
+    color: #000;
+    display:block;
+    line-height: 1px;
+    position: absolute;
+    top: 1.5rem;
+    left: 93%;
+    
+}
+}
